@@ -1,0 +1,51 @@
+2024-12-20 17:59:00,950 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-20 17:59:03,725 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-20 17:59:04,455 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-20 17:59:04,457 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-20 17:59:04,940 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 17:59:04,940 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:05:23,494 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 18:05:23,494 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:05:29,169 - __main__ - INFO - Processing contract
+2024-12-20 18:06:02,983 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 18:06:02,983 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:06:08,369 - __main__ - INFO - Processing contract
+2024-12-20 18:06:13,198 - faiss.loader - INFO - Loading faiss.
+2024-12-20 18:06:14,197 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-20 18:06:25,572 - __main__ - ERROR - Error querying model: MPS backend out of memory (MPS allocated: 8.92 GB, other allocations: 704.00 KB, max allowed: 9.07 GB). Tried to allocate 499.08 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2024-12-20 18:06:25,639 - __main__ - INFO - Added data for question
+2024-12-20 18:06:25,660 - __main__ - INFO - Successfully saved data to final_extracted_data/contract/contract_final_extracted.json
+2024-12-21 23:55:42,778 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-21 23:55:43,550 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-21 23:55:43,894 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-21 23:55:43,897 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-21 23:55:44,205 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-21 23:55:44,205 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-21 23:55:49,169 - __main__ - INFO - Processing contract
+2024-12-21 23:55:54,119 - faiss.loader - INFO - Loading faiss.
+2024-12-21 23:55:54,625 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-21 23:55:55,661 - __main__ - ERROR - Error querying model: Input length of input_ids is 4044, but `max_length` is set to 20. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2024-12-21 23:55:55,661 - __main__ - INFO - Added data for question
+2024-12-21 23:55:55,662 - __main__ - INFO - Successfully saved data to final_extracted_data/contract/contract_final_extracted.json
+2024-12-22 00:40:09,634 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-22 00:40:10,177 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-22 00:40:10,441 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-22 00:40:10,443 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-22 00:40:10,650 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-22 00:40:10,650 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-22 00:40:16,320 - __main__ - INFO - Processing contract
+2024-12-22 00:40:21,326 - faiss.loader - INFO - Loading faiss.
+2024-12-22 00:40:21,601 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-29 00:18:11,605 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-29 00:18:12,384 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:18:12,729 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-29 00:18:12,732 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-29 01:33:05,736 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-29 01:39:29,852 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 01:39:30,223 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-29 01:39:30,226 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-29 01:39:30,555 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-29 01:39:30,555 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-29 01:42:19,342 - rag - INFO - Processing contract
+2024-12-29 01:42:29,994 - faiss.loader - INFO - Loading faiss.
+2024-12-29 01:42:30,254 - faiss.loader - INFO - Successfully loaded faiss.
