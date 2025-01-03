@@ -1,0 +1,48 @@
+# Use Python base image
+FROM python:3.10-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV VIRTUAL_ENV=/opt/venv
+
+# Create virtual environment
+RUN python -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+# Set working directory
+WORKDIR /test
+
+# Install system dependencies, including OpenGL
+RUN apt-get update && apt-get install -y \
+    curl \
+    build-essential \
+    libgl1 \
+    libgl1-mesa-glx \
+    libglib2.0-0 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip in the virtual environment
+RUN $VIRTUAL_ENV/bin/pip install --upgrade pip
+
+# Copy only requirements first to leverage Docker cache
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN $VIRTUAL_ENV/bin/pip install -r requirements.txt
+
+# Create directories for contracts and cleaned outputs
+RUN mkdir -p ./contracts ./cleaned_contracts
+
+# Copy the rest of the application
+COPY . .
+
+# Expose port for FastAPI
+EXPOSE 8000
+
+# Use an entrypoint script to run the app
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Use the entrypoint script
+ENTRYPOINT ["/entrypoint.sh"]

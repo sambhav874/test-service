@@ -1,0 +1,25 @@
+docker build -t contract-rag-system .
+
+
+
+docker run -d \
+  --name contract-rag-app \
+  -p 8000:8000 \
+  -e HUGGINGFACE_TOKEN=<your_huggingface_token> \
+  -v $(pwd)/contracts:/test/contracts \
+  -v $(pwd)/cleaned_contracts:/test/cleaned_contracts \
+  -v $(pwd)/final_extracted_data:/test/final_extracted_data \
+  contract-rag-system
+
+
+
+For gpu :
+
+docker run -d \
+  --gpus all \
+  --name contract-rag-app \
+  -p 8000:8000 \
+  -v $(pwd)/contracts:/test/contracts \
+  -v $(pwd)/cleaned_contracts:/test/cleaned_contracts \
+  -v $(pwd)/final_extracted_data:/test/final_extracted_data \
+  contract-rag-system

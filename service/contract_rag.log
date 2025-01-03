@@ -1,0 +1,290 @@
+2024-12-20 17:59:00,950 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-20 17:59:03,725 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-20 17:59:04,455 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-20 17:59:04,457 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-20 17:59:04,940 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 17:59:04,940 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:05:23,494 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 18:05:23,494 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:05:29,169 - __main__ - INFO - Processing contract
+2024-12-20 18:06:02,983 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-20 18:06:02,983 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-20 18:06:08,369 - __main__ - INFO - Processing contract
+2024-12-20 18:06:13,198 - faiss.loader - INFO - Loading faiss.
+2024-12-20 18:06:14,197 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-20 18:06:25,572 - __main__ - ERROR - Error querying model: MPS backend out of memory (MPS allocated: 8.92 GB, other allocations: 704.00 KB, max allowed: 9.07 GB). Tried to allocate 499.08 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2024-12-20 18:06:25,639 - __main__ - INFO - Added data for question
+2024-12-20 18:06:25,660 - __main__ - INFO - Successfully saved data to final_extracted_data/contract/contract_final_extracted.json
+2024-12-21 23:55:42,778 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-21 23:55:43,550 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-21 23:55:43,894 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-21 23:55:43,897 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-21 23:55:44,205 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-21 23:55:44,205 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-21 23:55:49,169 - __main__ - INFO - Processing contract
+2024-12-21 23:55:54,119 - faiss.loader - INFO - Loading faiss.
+2024-12-21 23:55:54,625 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-21 23:55:55,661 - __main__ - ERROR - Error querying model: Input length of input_ids is 4044, but `max_length` is set to 20. This can lead to unexpected behavior. You should consider increasing `max_length` or, better yet, setting `max_new_tokens`.
+2024-12-21 23:55:55,661 - __main__ - INFO - Added data for question
+2024-12-21 23:55:55,662 - __main__ - INFO - Successfully saved data to final_extracted_data/contract/contract_final_extracted.json
+2024-12-22 00:40:09,634 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-22 00:40:10,177 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-22 00:40:10,441 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-22 00:40:10,443 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-22 00:40:10,650 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-22 00:40:10,650 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-22 00:40:16,320 - __main__ - INFO - Processing contract
+2024-12-22 00:40:21,326 - faiss.loader - INFO - Loading faiss.
+2024-12-22 00:40:21,601 - faiss.loader - INFO - Successfully loaded faiss.
+2024-12-29 00:18:11,605 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-29 00:18:12,384 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:18:12,729 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-29 00:18:12,732 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-29 01:33:05,736 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the disk.
+2024-12-29 01:39:29,852 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 01:39:30,223 - datasets - INFO - PyTorch version 2.4.0 available.
+2024-12-29 01:39:30,226 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2024-12-29 01:39:30,555 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2024-12-29 01:39:30,555 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2024-12-29 01:42:19,342 - rag - INFO - Processing contract
+2024-12-29 01:42:29,994 - faiss.loader - INFO - Loading faiss.
+2024-12-29 01:42:30,254 - faiss.loader - INFO - Successfully loaded faiss.
+2025-01-02 19:59:57,267 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 19:59:57,714 - datasets - INFO - PyTorch version 2.4.0 available.
+2025-01-02 19:59:57,717 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2025-01-02 19:59:58,119 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-02 19:59:58,120 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2025-01-02 20:05:28,754 - new - INFO - Processing contract
+2025-01-02 20:05:46,112 - faiss.loader - INFO - Loading faiss.
+2025-01-02 20:05:47,991 - faiss.loader - INFO - Successfully loaded faiss.
+2025-01-02 20:06:20,384 - new - ERROR - API request failed with status code 401
+2025-01-02 20:06:20,385 - new - ERROR - Response content: {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-02 20:06:52,475 - new - ERROR - API request failed with status code 401
+2025-01-02 20:06:52,477 - new - ERROR - Response content: {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+2025-01-02 20:08:08,101 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 20:08:08,420 - datasets - INFO - PyTorch version 2.4.0 available.
+2025-01-02 20:08:08,423 - datasets - INFO - TensorFlow found but with version 0.12.0. `datasets` requires version 2 minimum.
+2025-01-02 20:08:08,661 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-01-02 20:08:08,661 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: intfloat/e5-large-v2
+2025-01-02 20:10:49,036 - new - INFO - Processing contract
+2025-01-02 20:11:03,516 - faiss.loader - INFO - Loading faiss.
+2025-01-02 20:11:03,819 - faiss.loader - INFO - Successfully loaded faiss.
+2025-01-02 20:11:35,893 - new - INFO - Raw API response content: {
+  "basic_info": {
+    "project_name": "Statement of Work for provision of services Confidential",
+    "contract_start_date": "14/12/2015",
+    "contract_end_date": "31/12/2022",
+    "total_contract_value": "",
+    "brief_description": "Provision of services for search infrastructure development",
+    "key_parties": {
+      "customer_name": "LPRO Parts Holding NV",
+      "contact_details": {
+        "name": "Nimesh sucks",
+        "email": "nimesh.sucks@LPRO.com",
+        "phone": "+1 404 404112 1"
+      }
+    }
+  },
+  "enforceable_rights_obligations": {
+    "enforceable_rights_obligations": true,
+    "details": {
+      "contract_date": "14/12/2015",
+      "customer_name": "LPRO Parts Holding NV",
+      "contract_number": "",
+      "contract_type": "Statement of Work"
+    }
+  },
+  "contract_duration": "Until 31/12/2022",
+  "renewable_POs": {
+    "availability": false,
+    "details": []
+  },
+  "multiple_contracts_with_customer": {
+    "yes/no": false,
+    "should_they_be_combined_as_one_contract": {
+      "rationale": ""
+    }
+  },
+  "clarity_of_terms_payment_terms": {
+    "clarity_of_terms": true,
+    "areas_lacking_clarity": []
+  },
+  "performance_obligations": {
+    "distinct_services_promised": true,
+    "services_included": [
+      {
+        "name": "Search infrastructure development",
+        "description": "Development of search infrastructure with APIs and user interface"
+      },
+      {
+        "name": "Category search",
+        "description": "Implementation of category search functionality"
+      },
+      {
+        "name": "Reference search",
+        "description": "Implementation of reference search functionality"
+      }
+    ]
+  }
+}
+2025-01-02 20:11:35,898 - new - INFO - Successfully parsed and validated JSON
+2025-01-02 20:12:08,485 - new - INFO - Raw API response content: {
+  "services_distinct_in_nature_as_seperate_POs": {
+    "yes/no": true,
+    "how_service_meet_criterion": [
+      {
+        "name": "Data Analytics",
+        "description": "The Data Analytics service is distinct in nature as it involves the analysis of data to provide insights and recommendations. This service is separate from other services such as Consulting and Technology Solutions."
+      },
+      {
+        "name": "Consulting",
+        "description": "The Consulting service is distinct in nature as it involves providing expert advice and guidance to the customer. This service is separate from other services such as Data Analytics and Technology Solutions."
+      },
+      {
+        "name": "Technology Solutions",
+        "description": "The Technology Solutions service is distinct in nature as it involves the design, development, and implementation of technology solutions. This service is separate from other services such as Data Analytics and Consulting."
+      }
+    ]
+  },
+  "services_distinct_in_terms_of_contract": {
+    "yes/no": true,
+    "details": [
+      {
+        "name": "User Stories",
+        "description": "The User Stories are distinct in terms of the contract as they are specific deliverables that need to be completed by the service provider. Each User Story is identifiable as a separate performance obligation."
+      },
+      {
+        "name": "Deliverables",
+        "description": "The Deliverables are distinct in terms of the contract as they are specific outputs that need to be provided by the service provider. Each Deliverable is identifiable as a separate performance obligation."
+      }
+    ]
+  },
+  "contract_modifications_or_variable_considerations_affecting_PO": {
+    "yes/no": true,
+    "modifications_options": [
+      {
+        "name": "Withholding of 5% of the invoice",
+        "description": "The customer has the option to withhold 5% of the invoice for the first month of the iteration. This modification affects the performance obligations as it impacts the revenue recognition.",
+        "impact_on_revenue": "The withholding of 5% of the invoice will reduce the revenue recognized by the service provider in the first month of the iteration."
+      },
+      {
+        "name": "Payment terms",
+        "description": "The payment terms of the contract specify that the customer will pay the full amount of the invoice and the withheld amount if the team has met its obligations within 10% deviation. This modification affects the performance obligations as it impacts the revenue recognition.",
+        "impact_on_revenue": "The payment terms will impact the revenue recognized by the service provider as it depends on the team's performance and the customer's payment schedule."
+      }
+    ]
+  },
+  "transaction_price": {
+    "pricing_available": true,
+    "total_transaction_price": {
+      "amount_applicable_on_contract_date_including_variable_considerations": "The total transaction price for the contract is not explicitly stated in the contract. However, based on the services and deliverables listed, it can be inferred that the total transaction price will be based on the time and materials provided by the service provider."
+    },
+    "compensation_structure": {
+      "available_yes/no": true,
+      "details": {
+        "name": "Time and Materials",
+        "description": "The compensation structure is based on a time and materials approach, where the service provider will charge the customer for the actual time and materials provided."
+      }
+    },
+    "variable_considerations": {
+      "available_yes/no": true,
+      "nature": [
+        {
+          "name": "Discounts",
+          "amount": "5%",
+          "estimation": "The discounts will be estimated based on the customer's payment schedule and the service provider's performance."
+        }
+      ]
+    },
+    "financing_components_non_cash_considerations_payable_amt_to_client": {
+      "yes/no": false,
+      "details": []
+    }
+  }
+}
+2025-01-02 20:12:08,489 - new - INFO - Successfully parsed and validated JSON
+2025-01-02 20:12:41,559 - new - INFO - Raw API response content: {
+  "other_costs_associated_with_delivery": {
+    "yes/no": true,
+    "details": [
+      {
+        "cost": "Travel expenses",
+        "amount": "",
+        "description": "Priorly approved in writing by Customer and will be charged to Customer on a passthrough basis."
+      },
+      {
+        "cost": "Overheads",
+        "amount": "",
+        "description": "Included in a contract fee"
+      }
+    ]
+  },
+  "reimbursable_expenses_billed_to_client_separately": {
+    "available_yes/no": true,
+    "details": {
+      "expense": "Travel expenses",
+      "amount": "",
+      "description": "Priorly approved in writing by Customer and will be charged to Customer on a passthrough basis."
+    }
+  },
+  "non_recoverable_costs": {
+    "yes/no": false,
+    "details": []
+  },
+  "calculation_of_price_allocation_for_POs": {
+    "method_used": "Relative standalone selling prices",
+    "description": "The transaction price is allocated among the performance obligations based on the relative standalone selling prices of each obligation."
+  },
+  "standalone_prices_for_each_obligation": {
+    "yes/no": false,
+    "method_used_for_estimation": "Estimated based on the complexity of the services and timeline for deliverables",
+    "description": "Standalone selling prices are not available for each performance obligation, but are estimated based on the complexity of the services and timeline for deliverables."
+  },
+  "discounts_variable_considerations_specific_to_obligations": {
+    "yes/no": false,
+    "impact_on_allocation": ""
+  },
+  "milestones_or_kpiS": {
+    "available_yes/no": true,
+    "details": {
+      "how_measured_performance": "The squads are measured against the say-do ratio for each sprint, with a 10% minimum tolerance level."
+    }
+  },
+  "financial_terms": {
+    "payment_terms": [
+      {
+        "name": "Invoice at the end of each calendar month",
+        "description": "Based on the capacity of the team"
+      },
+      {
+        "name": "Withholding 5% of the invoice for the first month",
+        "description": "If the team has met its obligations within 10% deviation"
+      },
+      {
+        "name": "Payment of the full amount of invoice and the 5% from previous month",
+        "description": "If the team has met its obligations within 10% deviation"
+      },
+      {
+        "name": "Payment of the withheld amount upon completion of deliverables",
+        "description": "If the team failed to deliver the agreed deliverables within the 10% deviation"
+      }
+    ],
+    "revenue_recognition_overtime_or_pointintime": {
+      "basis": "Point in time"
+    },
+    "for_PO_recognition_overtime_method_used_for_measuring_progress": {
+      "Input/Output Method": "Input method",
+      "basis_of_selecting_the_method": "The input method is used to measure progress because it is a more accurate representation of the work completed."
+    },
+    "key_financial_obligations": [
+      {
+        "payment_withholding": "5%",
+        "payment_withholding_condition": "For the first month"
+      }
+    ]
+  }
+}
+2025-01-02 20:12:41,562 - new - INFO - Successfully parsed and validated JSON
+2025-01-02 20:12:41,567 - new - INFO - Successfully saved merged data to final_extracted_data/contract/contract_final_extracted.json

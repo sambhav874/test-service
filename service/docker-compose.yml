@@ -1,0 +1,49 @@
+
+services:
+  contract-rag-app:
+    image: contract-rag-system
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USE_GPU: ${USE_GPU:-false}  # Pass USE_GPU from .env or default to false
+    container_name: contract-rag-app
+    ports:
+      - "${API_PORT}:${API_PORT}"  # Use API_PORT from .env
+    environment:
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}  # Use HUGGINGFACE_TOKEN from .env
+      - GROQ_API_KEY=${GROQ_API_KEY}  # Use GROQ_API_KEY from .env
+      - API_HOST=${API_HOST}  # Use API_HOST from .env
+      - API_PORT=${API_PORT}  # Use API_PORT from .env
+      - INPUT_DIR=${INPUT_DIR}  # Use INPUT_DIR from .env
+      - OUTPUT_DIR=${OUTPUT_DIR}  # Use OUTPUT_DIR from .env
+      - FINAL_OUTPUT_DIR=${FINAL_OUTPUT_DIR}  # Use FINAL_OUTPUT_DIR from .env
+      - CLEANUP_FILES=${CLEANUP_FILES}  # Use CLEANUP_FILES from .env
+      - MODEL_NAME=${MODEL_NAME}  # Use MODEL_NAME from .env
+      - USE_GPU=${USE_GPU}  # Use USE_GPU from .env
+      - MAX_TOKENS=${MAX_TOKENS}  # Use MAX_TOKENS from .env
+      - TEMPERATURE=${TEMPERATURE}  # Use TEMPERATURE from .env
+      - TOP_P=${TOP_P}  # Use TOP_P from .env
+      - REPEAT_PENALTY=${REPEAT_PENALTY}  # Use REPEAT_PENALTY from .env
+      - EMBEDDINGS_MODEL_NAME=${EMBEDDINGS_MODEL_NAME}  # Use EMBEDDINGS_MODEL_NAME from .env
+      - LOG_LEVEL=${LOG_LEVEL}  # Use LOG_LEVEL from .env
+      - LOG_FILE=${LOG_FILE}  # Use LOG_FILE from .env
+      - THREAD_POOL_WORKERS=${THREAD_POOL_WORKERS}  # Use THREAD_POOL_WORKERS from .env
+      - CHUNK_SIZE=${CHUNK_SIZE}  # Use CHUNK_SIZE from .env
+      - CHUNK_OVERLAP=${CHUNK_OVERLAP}  # Use CHUNK_OVERLAP from .env
+    volumes:
+      - ${INPUT_DIR}:/test/contracts  # Use INPUT_DIR from .env
+      - ${OUTPUT_DIR}:/test/cleaned_contracts  # Use OUTPUT_DIR from .env
+      - ${FINAL_OUTPUT_DIR}:/test/final_extracted_data  # Use FINAL_OUTPUT_DIR from .env
+    restart: unless-stopped
+
+# Define volumes (optional)
+volumes:
+  contracts:
+  cleaned_contracts:
+  final_extracted_data:
+
+# Define networks (optional)
+networks:
+  default:
+    name: contract-rag-network
